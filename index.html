@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="it">
+<html lang="it">
  
 
  <head>
@@ -296,6 +296,43 @@
         opacity: 0;
     }
 
+    /* Stile per immagini sparse - ora stile banner */
+    .random-img {
+        display: block;
+        margin: 40px auto 40px auto;
+        width: 100%;
+        max-width: 1100px; /* Banner largo su desktop */
+        height: 250px;     /* Altezza fissa per effetto banner */
+        object-fit: cover; /* Ritaglia l'immagine per riempire il banner */
+        border-radius: 24px;
+        box-shadow: 0 6px 32px rgba(0,0,0,0.25), 0 0 0 4px var(--color-accent-primary, #00BCD4);
+        transition: transform 0.3s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.3s;
+        opacity: 0.93;
+    }
+    .random-img:hover {
+        transform: scale(1.02) rotate(-1deg);
+        box-shadow: 0 12px 40px rgba(0,188,212,0.25), 0 0 0 6px var(--color-accent-secondary, #9C27B0);
+        opacity: 1;
+    }
+    @media (max-width: 1200px) {
+        .random-img {
+            max-width: 98vw;
+            height: 180px;
+        }
+    }
+    @media (max-width: 768px) {
+        .random-img {
+            height: 120px;
+        }
+    }
+    @media (max-width: 576px) {
+        .random-img {
+            max-width: 99vw;
+            height: 80px;
+            margin: 18px auto;
+        }
+    }
+
     /* Keyframe Animations */
     @keyframes fadeInDown {
         from { opacity: 0; transform: translateY(-70px); }
@@ -480,8 +517,10 @@
 
   <div class="container">
   <section class="intro-box">
+  <!-- Immagine 1: Esperimento digitale (ora come banner in alto) -->
+  <img src="https://i.postimg.cc/Bt9zwr99/Progetto-senza-titolo-3.png" alt="Esperimento digitale" class="random-img" />
   <h2>Michele: Curiosità e Passione per il Digitale</h2>
-  <p>Ciao a tutti! Sono Michele, ho 13 anni e la mia curiosità per l'<b>informatica</b> è nata già a 8 anni. Da allora, ogni giorno è un'occasione per imparare e approfondire: dagli esperimenti con i sistemi operativi, al coding creativo, fino ai principi della cybersicurezza. Questa passione non è solo un interesse personale, ma una chiave che mi aiuta a connettere e dare un senso alle diverse materie che studio.</p>
+  <p>Buongiorno a tutte e a tutti! Sono Michele, ho 13 anni e la mia curiosità per l'<b>informatica</b> è nata già a 8 anni. Da allora, ogni giorno è un'occasione per imparare e approfondire: dagli esperimenti con i sistemi operativi, al coding creativo, fino ai principi della cybersicurezza. Questa passione non è solo un interesse personale, ma una chiave che mi aiuta a connettere e dare un senso alle diverse materie che studio.</p>
   <p>Considero questo colloquio un'opportunità per condividere il mio percorso e le mie prospettive, mostrando come l'informatica sia diventata un filo conduttore per la mia crescita.</p>
   <h3>Aree di Interesse e Sviluppo</h3>
   <ul>
@@ -503,7 +542,12 @@
   <li><b>Comprendere i "Messaggi"</b>: Per la comprensione di un testo, potrei analizzare un articolo che parla di intelligenza artificiale o temi digitali, mostrando come sia importante cogliere le sfumature e le implicazioni anche tecnologiche del linguaggio.</li>
   <li><b>La Logica della Grammatica</b>: Vedo la grammatica come la struttura logica del linguaggio, simile a come un algoritmo organizza un programma. Un'eventuale domanda di grammatica sarebbe un'occasione per mostrare questa mia capacità di analisi.</li>
   <li><b>Testi e Contesti Diversi</b>: Sono interessato ad analizzare testi che uniscono narrazione e informazione scientifica, come quelli che descrivono l'impatto della tecnologia sulla società, considerando anche i dati e le statistiche presenti.</li>
+  <p>La lingua italiana e la grammatica mi permettono di comprendere testi di attualità. In particolare il mio interesse è spesso attratto da <b>articoli di giornale</b> da cui si evince come l'informatica svolga un ruolo fondamentale in contesti come quello <b>bellico.</b></p>
   </ul>
+  <!-- Immagine 2: Progetto di coding -->
+  <img src="https://www.alground.com/site/wp-content/uploads/2025/06/israele-iran.jpg" alt="iran-israele" class="random-img" />
+  <!-- Pulsante per leggere un articolo -->
+  <a href="https://www.repubblica.it/tecnologia/2025/06/16/news/guerra_israele_iran_hacker_cyber_informatica-424672528/?sv1=affiliate&sv_campaign_id=143466&awc=86903_1750240964_fc96954ef23e3849e12383ad6861dfe3" target="_blank" class="music-button" style="margin-top:32px;display:inline-block;">Leggiamo assieme un articolo</a>
   </section>
  
 
@@ -516,42 +560,9 @@
   <li><b>Pensiero Critico e Computazionale</b>: Il pensiero computazionale, che ho sviluppato anche attraverso il coding, mi è utile per affrontare problemi complessi in modo strutturato e per capire i limiti delle conclusioni su questioni non sempre semplici.</li>
   <li><b>Modelli e Simulazioni</b>: Sono affascinato da come i modelli matematici, applicati con software, permettono di simulare fenomeni reali, dalla diffusione di idee alla previsione di trend tecnologici.</li>
   </ul>
-  </section>
- 
-
-  <section id="inglese">
-  <h2>International Module: English as a Digital Bridge</h2>
-  <p>I can communicate in <b>English</b> at an elementary level, handling simple everyday situations. I know how important this language is for the digital world.</p>
-  <h3>Global Communication</h3>
-  <ul>
-  <li><b>Personal Presentation in English</b>: I could give a brief presentation in English to talk about my interests and passions related to digital topics.</li>
-  <li><b>Technical Terminology</b>: I'm interested in computer science terminology, which often has English roots, and I understand the importance of this language for accessing global resources like documentation and tutorials.</li>
-  <li><b>Connecting Globally</b>: English helps me interact with the international community of developers and tech enthusiasts, overcoming language barriers to seek new information and ideas.</li>
-  </ul>
-  </section>
- 
-
-  <section id="francese">
-  <h2>Module Multilingue: Le Français et la Culture Numérique</h2>
-  <p>En plus de l'anglais, j'ai étudié le <b>Français</b> pendant trois ans et j'ai appris à communiquer dans des situations quotidiennes simples. Le français, comme l'anglais, est une porte d'accès à de nouvelles connaissances et à une culture riche, souvent liée au monde numérique.</p>
-  <h3>Perspectives Francophones dans le Numérique</h3>
-  <ul>
-  <li><b>Présentation Personnelle en Français</b>: Je pourrais faire une courte introduction sur moi-même ou mes intérêts en français, montrant mes compétences dans la langue.</li>
-  <li><b>Terminologie et Innovation Francophone</b>: Je suis curieux d'explorer comment la langue française s'adapte et contribue au vocabulaire technologique, et comment les pays francophones participent à l'innovation numérique.</li>
-  <li><b>Projets Culturels Numériques</b>: Je pourrais rechercher ou mentionner des projets numériques intéressants développés dans le monde francophone, pour montrer le lien entre la langue et la technologie dans différents contextes culturels.</li>
-  </ul>
-  </section>
- 
-
-  <section id="storia">
-  <h2>Modulo Temporale/Spaziale: La Storia e la Geografia nel Contesto Digitale</h2>
-  <p>Cerco di orientarmi nello <b>Spazio e nel Tempo</b>, con curiosità e desiderio di comprendere il senso degli eventi.</p>
-  <h3>Comprendere il Contesto Digitale</h3>
-  <ul>
-  <li><b>Evoluzione della Tecnologia</b>: Vorrei analizzare un evento o un personaggio storico legato all'informatica, come l'invenzione di internet o l'impatto dei social media, per capire come la tecnologia abbia influenzato la società.</li>
-  <li><b>Geografia Digitale</b>: So leggere e interpretare mappe e dati geografici, anche attraverso strumenti digitali, per visualizzare fenomeni demografici o economici legati alla tecnologia.</li>
-  <li><b>Il Concetto di "Tempo Reale"</b>: Rifletto su come l'informatica abbia trasformato la nostra percezione di spazio e tempo, rendendo possibile comunicare e accedere a informazioni istantaneamente da ogni parte del mondo.</li>
-  </ul>
+  <!-- Immagine 3: Allenamento sportivo e tecnologia -->
+  <img src="https://i.postimg.cc/gkdcyxMg/Testo-del-paragrafo.png" alt="Analisi del grafico 1" class="random-img" />
+  <img src="https://i.postimg.cc/PrftCPrY/Testo-del-paragrafo-1.png" alt="Analisi del grafico 2" class="random-img" />
   </section>
  
 
@@ -564,6 +575,14 @@
   <li><b>Musica e Algoritmi</b>: Sono affascinato dalla musica elettronica o quella creata con software, e mi piace capire come la programmazione e l'informatica abbiano innovato la produzione e la composizione musicale.</li>
   <li><b>Narrazione Interattiva</b>: Analizzo con interesse la grafica computerizzata nei videogiochi o negli effetti speciali dei film, dove l'arte e il codice si uniscono per dar vita a mondi immersivi.</li>
   </ul>
+  <!-- Immagine 4: Creatività digitale (ora video 16:9) -->
+  <div style="position:relative; width:100%; max-width:1100px; aspect-ratio:16/9; margin:40px auto 40px auto; border-radius:24px; overflow:hidden; box-shadow:0 6px 32px rgba(0,0,0,0.25), 0 0 0 4px #00BCD4;">
+    <iframe allow="fullscreen;autoplay" allowfullscreen
+      src="https://streamable.com/e/uk2pj8?autoplay=1&muted=1"
+      style="border:none; width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border-radius:24px;"
+      width="100%" height="100%">
+    </iframe>
+  </div>
   </section>
  
 
@@ -573,8 +592,24 @@
   <h3>Il Mio Progetto Musicale Digitale</h3>
   <p>Per illustrare questo punto, vorrei presentarvi un piccolo progetto musicale a cui ho lavorato. Ho scelto un brano che mi piace molto perché mi provoca un mix di emozioni: una certa nostalgia per sonorità che richiamano il passato, ma allo stesso tempo una grande energia che mi spinge ad andare avanti. L'ho selezionata proprio per questa sua capacità di essere sia "nostalgica" che "energica", un po' come il mio percorso tra apprendimento e nuove scoperte.</p>
   <a href="https://progettomusicamichelem.onrender.com/" target="_blank" class="music-button">Ascolta il Mio Brano Preferito</a>
+  <!-- Immagine 5: Visione per il futuro -->
+  <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/11/audacity-new-features.jpg" alt="Audacity" class="random-img" />
   </section>
- 
+
+  </section>
+
+  <section id="storia-geografia">
+    <h2>Modulo Storico-Geografico: Comprendere il Mondo e le Sue Trasformazioni</h2>
+    <p>Lo studio della <b>Storia</b> e della <b>Geografia</b> mi aiuta a capire come gli eventi del passato e le caratteristiche dei diversi territori abbiano influenzato la società in cui viviamo oggi. Analizzare i cambiamenti storici e geografici mi permette di collegare le conoscenze acquisite nelle altre materie e di avere una visione più ampia e consapevole del mondo.</p>
+    <h3>Collegamenti e Riflessioni</h3>
+    <ul>
+      <li><b>Eventi e Innovazione</b>: Mi interessa osservare come le scoperte tecnologiche abbiano cambiato la storia e il modo in cui le persone vivono e si spostano nei diversi continenti.</li>
+      <li><b>Geografia Digitale</b>: Utilizzo mappe interattive e strumenti digitali per esplorare i territori, comprendere i fenomeni ambientali e analizzare dati geografici.</li>
+      <li><b>Connessioni tra Popoli</b>: Rifletto su come la geografia abbia favorito incontri e scambi tra culture diverse, contribuendo allo sviluppo della società globale.</li>
+    </ul>
+    <!-- Immagine consigliata: una mappa digitale o un globo interattivo -->
+    <img src="https://i.postimg.cc/BQ3D8PnS/Testo-del-paragrafo-3.png" alt="Mappa del mondo digitale 1943 Italia" class="random-img" />
+  </section>
 
   <section id="competenze-digitali">
   <h2>Modulo Core: Le Mie Competenze Digitali</h2>
@@ -585,6 +620,8 @@
   <li><b>Ricerca e Valutazione delle Informazioni</b>: Sono in grado di effettuare ricerche online, selezionare le informazioni pertinenti, valutarne l'affidabilità e rielaborare contenuti (come immagini) per creare nuove risorse.</li>
   <li><b>Partecipazione Digitale Consapevole</b>: Le mie competenze digitali mi consentono di interagire con diverse comunità online, contribuendo a progetti e promuovendo un uso responsabile della tecnologia.</li>
   </ul>
+  <!-- Immagine 6: Esperienza scolastica -->
+  <img src="https://content-management-files.canva.com/07629141-67f1-4a12-a1f6-24801fc02444/a35c7a87-fc94-41e9-b732-c0fd9837a77d.png" alt="Esperienza scolastica" class="random-img" />
   </section>
  
 
@@ -613,7 +650,6 @@
   </ul>
   <p>Con InnovaChat, il mio obiettivo è rendere l'IA più accessibile e utile per tutti, dimostrando come la tecnologia possa semplificare la vita quotidiana e stimolare la creatività. Sono pronto a mostrarvi una demo e a rispondere a qualsiasi domanda su come funziona e su come l'ho sviluppata!</p>
   <a href="https://innovachatfrontend.onrender.com/" target="_blank" class="innovachat-button">Prova InnovaChat</a>
-  </section>
   </div>
  
 
